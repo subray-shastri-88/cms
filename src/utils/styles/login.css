@@ -1,0 +1,43 @@
+/* For small screens and mobile devices */
+.login-container {
+  background-image: url("./green.png");
+  background-size: cover;
+  background-position: right top;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.login-grid-container {
+  padding: 20px;
+  width: 90%; 
+  max-width: 400px; 
+  border-radius: 20px;
+  z-index: 1;
+  box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, 0.09);
+  margin: 20px; 
+}
+
+
+@media only screen and (min-width: 600px) {
+  .login-container {
+    flex-direction: row; 
+  }
+
+  .login-grid-container {
+    width: 80%; 
+    max-width: 600px; 
+    margin: 0 auto; 
+  }
+}
+
+/* For larger screens like desktops */
+@media only screen and (min-width: 1000px) {
+  .login-grid-container {
+    width: 80%; 
+    max-width: 800px;
+  }
+}
